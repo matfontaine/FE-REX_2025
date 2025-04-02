@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>5eme forum enseignement - Télécom Paris</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/telecom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section class="cover" data-background="figures/background-blur.png"  data-state="no-title-footer no-progressbar has-dark-background">
+
+					<h2 id='coverh2'> Apprentissage par Problèmes en Traitement du Signal</h2>
+					<h1  id='title_seminar'> 5ème Forum de l'Enseignement Télécom Paris</h1>
+					<h3><a href="https://matfontaine.github.io/FE-REX_2025", id='github_url'>matfontaine.github.io/FE-REX_2025</a></h3>
+					<p id='coverauthors'>
+						Mathieu FONTAINE<br />
+						mathieu.fontaine@telecom-paris.fr
+					</p>
+					<p id="date">
+					3 Avril 2025
+					</p>
+					<p>
+					<img src="css/theme/img/logo-Telecom.svg" id="telecom" class="logo" alt="">
+					<aside class="notes">
+						<ul><li>We will consider historical audio source separation technique</li>
+									<li>e.g. no deep learning extensions or nonnegative matrix factorization</li>
+								<li>the Handbook for that course is available on the moodle (PAM/Audio_source_separation)</li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- Outline of the presentation -->
+
+				<section>
+					<h1> Apprentissage par problèmes (Définition) </h1>
+					<h2>Généralités</h2>
+					<ul>
+						<li>Développé par l'Université McMaster de Hamilton dans les années 70</li>
+						<li>Favoriser le travail (souvent) en groupe pour tenter de résoudre un problème</li>
+						<li>Découverte du cours et du "savoir faire" de manière active pour résoudre le/les problème(s)</li>
+					</ul>
+					<!-- <h2>Organisation des groupes & rôles</h2>
+					<ul>
+						<li>Les enseignants jouent le rôle de tuteurs</li>
+						<li>Différents rôles pour les élèves (scribe, maître du temps, animateur etc.) </li>
+					</ul>
+					<h2>Intérêts visés</h2>
+					<ul>
+						<li>L'apprenant passe dans un apprentissage active</li>
+						<li>L'apprenant est "forcé" de savoir gérer son temps (regarder les vidéos, travailler sur le problème etc.)</li>
+					</ul> -->
+				</section>
+
+
+				<section>
+					<h1> Apprentissage par problèmes (Définition) </h1>
+					<h2>Généralités</h2>
+					<ul>
+						<li>Développé par l'Université McMaster de Hamilton dans les années 70</li>
+						<li>Favoriser le travail (souvent) en groupe pour tenter de résoudre un problème</li>
+						<li>Découverte du cours et du "savoir faire" de manière active pour résoudre le/les problème(s)</li>
+					</ul>
+					<h2>Organisation des groupes & rôles</h2>
+					<ul>
+						<li>Les enseignants jouent le rôle de tuteurs</li>
+						<li>Différents rôles pour les élèves (scribe, maître du temps, animateur etc.) </li>
+					</ul>
+					<!-- <h2>Intérêts visés</h2>
+					<ul>
+						<li>L'apprenant passe dans un apprentissage active</li>
+						<li>L'apprenant est "forcé" de savoir gérer son temps (regarder les vidéos, travailler sur le problème etc.)</li>
+					</ul> -->
+				</section>
+
+				<section>
+					<h1> Apprentissage par problèmes (Définition) </h1>
+					<h2>Généralités</h2>
+					<ul>
+						<li>Développé par l'Université McMaster de Hamilton dans les années 70</li>
+						<li>Favoriser le travail (souvent) en groupe pour tenter de résoudre un problème</li>
+						<li>Découverte du cours et du "savoir faire" de manière active pour résoudre le/les problème(s)</li>
+					</ul>
+					<h2>Organisation des groupes & rôles</h2>
+					<ul>
+						<li>Les enseignants jouent le rôle de tuteurs</li>
+						<li>Différents rôles pour les élèves (scribe, maître du temps, animateur etc.) </li>
+					</ul>
+					<h2>Intérêts & attentes visés</h2>
+					<ul>
+						<li>L'apprenant passe dans un apprentissage active</li>
+						<li>L'apprenant est "forcé" de savoir gérer son temps (regarder les vidéos, travailler sur le problème etc.)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1> Cadre </h1>
+					<ul>
+						<li><b>UE : </b> APM_3TC16_TP - Outils et applications pour le signal, les images et le son (OASIS) </li>
+						<li><b>Nombre d'élèves :</b> Variable (basé sur le volontariat. Entre 15 et 30 élèves)</li>
+						<li><b>Equipe pédagogique :</b> Olivier FERCOQ (spécialisé en optimisation & traitement en images) & Mathieu FONTAINE (traitement en audio)</li>
+						<li><b>Période : </b> P3 (17/02 au 7/04) </li>
+						<li><b>Année :</b> Premier année en école d'ingénieur</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1> Topo de l'expérience (1/2) </h1>
+					<h2>Ce qui était prévu</h2>
+					<ul>
+						<li>Une autonomie importante des élèves conduisant à une bonne compréhension du cours</li>
+						<li>Elaboration de nouveaux notebooks et vidéo leur donnant les connaissances pratiques</li>
+						<li>une nouvelle APP pour englober plus de chapitre (adaptée à la réduction de TH dans le module)</li>
+					</ul>
+					<!-- <h2>Ce qui s'est passé</h2>
+					<ul>
+						<li>Certains élèves ont eu du mal à acquérir l'autonomie</li>
+						<li>Les premiers QCM ne révèlent pas forcément de "très bonnes notes"</li>
+						<li>Les QCM d'après et présentations des APP s'améliorent grandement dans un second temps</li>
+					</ul> -->
+				</section>
+
+				<section>
+					<h1> Topo de l'expérience (1/2) </h1>
+					<h2>Ce qui était prévu</h2>
+					<ul>
+						<li>Une autonomie importante des élèves conduisant à une bonne compréhension du cours</li>
+						<li>Elaboration de nouveaux notebooks et vidéo leur donnant les connaissances pratiques</li>
+						<li>une nouvelle APP pour englober plus de chapitre (adaptée à la réduction de TH dans le module)</li>
+					</ul>
+					<h2>Ce qui s'est passé</h2>
+					<ul>
+						<li>Certains élèves ont eu du mal à acquérir l'autonomie au début</li>
+						<li>Les premiers QCM ne révèlent pas forcément de "très bonnes notes"</li>
+						<li>Les notes aux QCM suivants et présentations des APP s'améliorent grandement</li>
+						<li>La nouvelle APP (reconnaissance d'instruments et/ou note de musique) est globalement très appréciée</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h1> Topo de l'expérience (2/2) </h1>
+					<h2>Points saillants et à retenir</h2>
+					<ul>
+						<li>Des avis "extrêmes" : j'aime beaucoup ou je n'aime pas du tout</li>
+						<li>Les séances aller (appropriation du sujet, dégager le problème etc.) sont parfois survolé si un groupe ne joue pas le jeu</li>
+
+					</ul>
+					<h2>Points clés de cette expérience</h2>
+					<ul>
+						<li>Ne pas tout miser sur les APP : un CM d'introduction sur la TF réconfortait les élèves</li>
+						<li>Les TD sont toujours nécessaires pour bien réussir le contrôle finale sur table (et les APP !)</li>
+						<li>Pour l'enseignant/tuteur : Être motivé pour enseigner de cette manière</li>
+					</ul>
+				</section>
+
+				
+	</div>
+
+
+<div class='footer'>
+	<img src="css/theme/img/logo-Telecom.svg" alt="Logo"/>
+	<div id="middlebox">REX - APP Traitement du signal</div>
+</div>
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: false,
+				slideNumber: true,
+				minScale: 0.1,
+				maxScale: 5,
+				transition: 'none', //
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math-katex/math-katex.js', async: true },
+					{ src: 'plugin/reveald3/reveald3.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+
+</html>
